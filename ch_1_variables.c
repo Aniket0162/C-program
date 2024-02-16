@@ -1,17 +1,14 @@
 #include<stdio.h>
 
 int main(){
-   int number = 25; // if we want to store no. we use int. 
-   char star = "*"; // if we want to store character value then we use char. 
-   int age = 22; // while working on bigger projects it is necessary to give proper name to a variable. 
-   age = 25;  // variable name are not fixed. we can change them once they are declare. 
-   float pi = 3.14;  // if we want to store floating value then we use float.
+   // constants = Values that don't change (fixed)
 
-   int a = 30;  // variable are case sensitive.
-   int A = 40; // both a & A are different variable.
+    // Types = 1. Integer constants [1,2,3,0,-1,-2.......] 
+         //    2. Real constants [1.0,2.0,3.14,2.4,......]
+        //     3. Character constants ['a','b','A','#','&'............]
 
-   int _age = 52; // In variable our first character must be alphabet or start with _ only. No comma / blank space.
 
-   int final_price = 100; 
+
+      // Keywords = Reserved words that have Special meaning to the compiler are -> 32 Keywords in C   
    return 0; 
 } 
