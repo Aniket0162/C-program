@@ -1,84 +1,102 @@
-// Structure of our program
+                        // Practice Questions 
 
-// #include<stdio.h>
 
-// int main(){
-//     printf("Hello World\n");
-//     return 0;
-// }
-    // Comments = Lines that are not part of program.
-
-/*  1. Single line Comments = [ // ] 
-    2. Multiple line comments =  [  /*  * / ]
-*/
-
-// Output =
 #include<stdio.h>
 
 int main(){
 
-int age = 22;
-float pi = 3.14;  
-char star = '*';
+// Q.1 Write a program to calculate area of a square.(Side is given)
+// ======> 
+    int sides;
+    float side;
+
+    // For intger 
+    printf("Enter area of a square is = ");
+    scanf("%d",&sides);
+
+    printf("Area of a square is = %d \n",sides * sides);
+
+
+
+    // For Float 
+    printf("Enter area of a square for float is = ");
+    scanf("%f",&side);
+
+    printf("Area of a square is = %f \n",side * side);
+
+
+
+
+
+
+
+
+// Q.2 Write a program to calculate area of a Circle .(radius is given)
+// ====> 
+
+
+float radius;
+
+printf("Enter the radius of a circle = ");
+scanf("%f",&radius);
+
+printf("Area of circle is = %f \n", 3.14*radius*radius);
+
+
+
+
+
+
+
+
+
+
+// Q.3  Write a program to calculate perimeter of a rectangle. Take sides,a & b, from the user.
+// =======>
+
+// formula is =>  P = ( L + W ) * 2
 
 int a, b;
 
-int salary; 
-printf("Hi My name is Anish \n"); // Backslash \n is use to break the line & print the data in new line
-printf("Hi My name is Karan \n");
-printf("Hi My name is Mayure\n");
-
- 
-
-// In Output we have some cases = for output we use [ printf ] 
-
-/*
-1. Intgers = 
-printf("age is %d", age);
-
-2. real numbers = 
-printf("value od pi is %f", pi);
-
-3. characters = 
-printf("star looks like %c", star);
-
-*/
-
-printf("Anish age is %d \n", age);
-printf("Anish got %f of profit \n", pi);
-printf("this is how we can print star %c \n",star);
-
-
-//  Input = for input we use [ scanf ]
-printf("Enter your amount = ");
-scanf("%d",&salary); 
-printf("Your monthly salary is =  %d \n",salary);
-
-// operators
-
-printf("Enter value of a = "); // take a input of a 
+printf("Enter the length of a is = ");
 scanf("%d",&a);
 
-printf("Enter value of b = "); // take a input of b
+
+printf("Enter the Width of b is = ");
 scanf("%d",&b);
 
-int sum = a + b; //Addition of two numbers.
+int perimeter = (a + b) * 2;
 
-printf("Sum of a + b is =  %d  ",sum);
-            // or
-// printf("Sum of a + b is =  %d  ", a + b);
+printf("perimeter of rectangle is = %d \n",perimeter);
 
 
-// Compiler = A computer program that translate C code into machine code.
-
-// eg.        Hello.  ------------->   C compiler  --------------> a.exe(Windows) / a.out(linux & mac)
 
 
-//  1 = Means High Volatage .
-//  0 = Means Low Volatage .
 
-return 0;
 
-   
-} 
 
+// Q.4 Take a number (n) from user & output its cube(n*n*n).
+// ==========>
+int number;
+
+printf("Take any number = ");
+scanf("%d",&number);
+
+printf("Cube the Entered number  is = %d", number*number*number);
+
+
+
+
+
+
+
+// Q.5 Write a Comments for programs a & b.  
+// =========>
+// Their are two types of comments :
+/*
+    1. Single line.
+    2. Multiple line comments.
+
+*/
+    return 0;
+}
