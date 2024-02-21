@@ -1,3 +1,5 @@
+// Structure of our program
+
 #include<stdio.h>
 
 int main(){
