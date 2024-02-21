@@ -1,4 +1,6 @@
-#include<stdio.h>
+// Structure of our program
+
+// #include<stdio.h>
 
 // int main(){
 //     printf("Hello World\n");
@@ -77,5 +79,6 @@ printf("Sum of a + b is =  %d  ",sum);
 
 return 0;
 
+   
+} 
 
-}
