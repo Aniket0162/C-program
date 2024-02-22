@@ -1,102 +1,110 @@
-                        // Practice Questions 
+// Instructions =
+
+// These are Statements in program 
+
+/*
+
+Types =   1. Type Declaration Instructions.
+          2. Arithmetic Instructions.
+          3. Control Instructions.
+
+*/
+
+// 1. Type Declaration Instructions ===> declare var before using it.
+
+/* 
+
+ VALID =                        INVALID = 
+
+int a = 22;                     int a = 22; 
+int b = a;                      int b = a;                    
+int c = b + 1;                  int c = b + 2; 
+int d = 1, e;                   int d = 2, e; 
+
+int a,b,c;                      int a,b,c = 1;      
+a = b = c = 1;
+
+*/
+
+
+
+
+
+
 
 
 #include<stdio.h>
+#include<math.h>
 
-int main(){
+int main() {
+    // Valid Statments = 
 
-// Q.1 Write a program to calculate area of a square.(Side is given)
-// ======> 
-    int sides;
-    float side;
+    int a = 22;
+    int b = a;
+    int c = b + 1;
+    int d = 1, e;
 
-    // For intger 
-    printf("Enter area of a square is = ");
-    scanf("%d",&sides);
+    int x,y,z;
+    x = y = z = 3;
 
-    printf("Area of a square is = %d \n",sides * sides);
+    // In-Valid Statments =
 
-
-
-    // For Float 
-    printf("Enter area of a square for float is = ");
-    scanf("%f",&side);
-
-    printf("Area of a square is = %f \n",side * side);
-
-
-
-
-
-
-
-
-// Q.2 Write a program to calculate area of a Circle .(radius is given)
-// ====> 
-
-
-float radius;
-
-printf("Enter the radius of a circle = ");
-scanf("%f",&radius);
-
-printf("Area of circle is = %f \n", 3.14*radius*radius);
-
-
-
-
-
-
-
-
-
-
-// Q.3  Write a program to calculate perimeter of a rectangle. Take sides,a & b, from the user.
-// =======>
-
-// formula is =>  P = ( L + W ) * 2
-
-int a, b;
-
-printf("Enter the length of a is = ");
-scanf("%d",&a);
-
-
-printf("Enter the Width of b is = ");
-scanf("%d",&b);
-
-int perimeter = (a + b) * 2;
-
-printf("perimeter of rectangle is = %d \n",perimeter);
-
-
-
-
-
-
-
-// Q.4 Take a number (n) from user & output its cube(n*n*n).
-// ==========>
-int number;
-
-printf("Take any number = ");
-scanf("%d",&number);
-
-printf("Cube the Entered number  is = %d", number*number*number);
-
-
-
-
-
-
-
-// Q.5 Write a Comments for programs a & b.  
-// =========>
-// Their are two types of comments :
+    int oldAge = 22;
+    int year = 2;
+    int newAge = oldAge + year;      // this line is not showing error because we have declared variable first before using it.
 /*
-    1. Single line.
-    2. Multiple line comments.
+    int newAge = oldAge + years;     // this line is showing error because we have to declare variable first before using it.
+    int years = 2;
+
+    int x = y = z = 4;    // this line will also give an error as we can't [ use ]  and  [ declare ] value of variable at same time  
+
+*/   
+
+
+
+// Arithmetic Instructions =>  [ + , - , * , / , %  ].
+
+/* 
+
+ VALID =                        INVALID = 
+
+int a = b + c;                  int b + c = a;   
+int a = b * c;                  int a = bc;   
+int a = b / c;                  int a = b ^ c;   
+
+Ex. 
+
+    int b, c;
+    b = c = 1;
+    int a = b + c;
+
+    int a = b ^ c;   // this will give an error because we don't declare power like this. for power declaration we use function called [ pow ].
+
+    int power = pow(b,c); 
+*/
+
+
+
+
+
+//  Modular Operation (%) = Returns remainder for int
+
+/*
+
+Ex. 
+
+         3 % 2 = 1
+        -3 % 2 = -1
+
+        printf("%d", 8 % 3);
 
 */
+
+
+// Type Conversion = 
+
+// int  Operation       int =====> int 
+// int  Operation       float =====> float                // int takes 2 bytes & float takes 4 bytes.
+// float  Operation       float =====> float 
     return 0;
 }
